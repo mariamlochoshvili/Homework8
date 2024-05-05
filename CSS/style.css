@@ -79,7 +79,7 @@
   /*press start text animation styles*/
   .start{
     font-family: 'VT323', cursive;
-    font-size: 58px;
+    font-size: 88px;
     animation: Animation 8s ease-in-out infinite;
     margin-top: 50px;
     color: #30072d;
@@ -173,7 +173,7 @@
   /*win text animation*/
   .win-text{
     font-family: 'VT323', cursive;
-    font-size: 64px;
+    font-size: 104px;
     position: absolute;
     z-index: 2;
     left: 50%;
