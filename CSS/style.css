@@ -96,3 +96,117 @@
     95% {opacity: 0;}
     100% {opacity:1;}
   }
+ /* game page styles*/
+ .game-bg{
+    background-image: url("../images/bgr.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  /*character styles and animation*/
+  .girl-char{
+    width: 150px;
+    position: absolute;
+    left: 5%;
+    top: 75%;
+    animation: movement 6s forwards, 
+    jump 2s 4s forwards;
+  }
+  
+  @keyframes movement{
+    from {
+      left: 5%;
+    }
+    to {
+      left: 80%;
+    }
+  
+  }
+  @keyframes jump{
+    0% { top: 75%; }
+    50% { top: 65%; }
+    100% { top: 75%; }
+  }
+  
+  /*clouds style and animation*/
+  .cloud {
+    position: absolute;
+    width: 250px;
+    right: 0%;
+    top: 20%;
+    animation: moveleft 10s ease-in-out forwards;
+  
+  }
+  @keyframes moveleft {
+    from {
+      right: 0%;
+    }
+    to {
+      right: 100%;
+    }
+  }
+
+  /*dropping heart style and animation*/
+  .heart{
+    width: 100px;
+    position: absolute;
+    left: 80%; 
+    top: 10%;
+    z-index: 1;
+    animation: drop 3s 2s linear forwards;
+  }
+
+  @keyframes drop{
+    0%{
+      top: 10%; opacity:1;
+    }
+    90% {
+      top: 65%; opacity:1;
+    }
+    100% {
+      top: 66%; opacity:0;
+    }
+  }
+
+  /*win text animation*/
+  .win-text{
+    font-family: 'VT323', cursive;
+    font-size: 64px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: win 14s 1 forwards;
+    color: #350142;
+  }
+  
+  @keyframes win{
+    0%  {opacity:0;}
+    35% {opacity:0;}
+    65% {opacity:1;}
+    70% {opacity:0;}
+    75% {opacity:1;}
+    80% {opacity:0;}
+    85% {opacity:1;}
+    90% {opacity:0;}
+    95% {opacity:1;}
+    100% {opacity:0;}
+  }
+
+  /* life hearts*/
+
+.life-container{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.life-hearts{
+    width: 50px;
+  }
+  
